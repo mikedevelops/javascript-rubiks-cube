@@ -13,7 +13,7 @@
     "prod": "npm run scss:prod && npm run js:prod",
     "js:watch": "nodemon --watch javascript --ext js --exec \"npm run js:dev\"",
     "serve": "browser-sync start --server --index ./public/index.html --startPath ./public/index.html --files ./public",
-    "start": "npm run scss:dev && npm run js:dev && concurrently --prefix \"[{name}]\" --names \"BS,JS,SCSS\" \"npm run scss:watch\" \"npm run js:watch\" \"npm run serve\""
+    "start": "npm run scss:dev && npm run js:dev && concurrently --raw \"npm run scss:watch\" \"npm run js:watch\" \"npm run serve\""
   },
   "author": "Michael Smart",
   "devDependencies": {
@@ -25,9 +25,6 @@
     "concurrently": "^3.0.0",
     "eslint": "^3.7.0",
     "eslint-config-google": "^0.6.0",
-    "eslint-config-standard": "^6.2.0",
-    "eslint-plugin-promise": "^2.0.1",
-    "eslint-plugin-standard": "^2.0.1",
     "minifyify": "^7.3.3",
     "node-sass": "^3.10.0",
     "nodemon": "^1.10.2",
