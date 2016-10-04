@@ -13,6 +13,10 @@ A starting point. SCSS compilation & Javascript Bundling.
     |       |-- app.css
     |       |-- bundle.js
 ```
+
+`npm install`
+- Install dependencies
+
 `npm start`
 - Compile SCSS
 - Autoprefix CSS
