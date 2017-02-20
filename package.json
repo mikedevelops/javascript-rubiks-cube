@@ -1,6 +1,6 @@
 {
-  "name": "boilerplate",
-  "version": "1.0.0",
+  "name": "javascript-rubiks-cube",
+  "version": "0.0.0",
   "description": "",
   "scripts": {
     "scss:dev": "node-sass ./scss/main.scss ./public/dist/app.css && npm run scss:prefix",
